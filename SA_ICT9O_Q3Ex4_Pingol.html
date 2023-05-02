@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+	<title>Meters Calculator!</title>
+	<style type="text/css">
+		body{
+			background: #EBE1FF;
+		}
+		h1{
+			font-family: 'Sigmar', cursive;
+			color: #5E3390;
+		}
+	</style>
+</head>
+<body>
+
+<form>
+<div align="center">
+	<br>
+	<h1>Meters to cm Calculator!</h1>
+	<p>Enter value in m: <input type="number" name="x" id="x"></p>
+	<p>please enter your given value :D</p>
+	<button type="submit" onclick="Compute()">Calculate</button>
+</div>
+</form>
+
+<script>
+
+	let cm = num1 * 100;
+	function Compute(){
+		var x = document.getElementById("x");
+		var cm = Number ("x") * 100;
+		window.alert("The answer in cm is " + cm);
+	}
+
+</script>
+	
+</body>
+</html>
